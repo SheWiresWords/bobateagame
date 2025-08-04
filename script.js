@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function(){
   window.addEventListener('scroll', function(){
     const scrolled = window.pageYOffset;
     const top = document.querySelector('.top');
-    const rate = scrolled * -0.5;
+    const rate = scrolled * -0.1;
     
     if(top){
       top.style.transform = `translateY(${rate}px)`;

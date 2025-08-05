@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
   const observer = new IntersectionObserver(function(entries){
     entries.forEach(entry =>{
-      if (entry.isIntersecting) {
+      if(entry.isIntersecting){
         entry.target.classList.add('visible');
       }
     });
@@ -54,12 +54,14 @@ document.addEventListener('DOMContentLoaded', function(){
     const scrolled = window.pageYOffset;
     const top = document.querySelector('.top');
     const rate = scrolled * -0.1;
-    
+
+    //learned how to do this parallax effect from a video!
     if(top){
       top.style.transform = `translateY(${rate}px)`;
     }
   });
 
+  //transformation for image hover effects
   const placeholderImages = document.querySelectorAll('.placeholder-image');
   placeholderImages.forEach(image =>{
     image.addEventListener('mouseenter', function() {
@@ -76,8 +78,9 @@ document.addEventListener('DOMContentLoaded', function(){
   const timelineItems = document.querySelectorAll('.timeline-item');
   timelineItems.forEach((item, index) =>{
     item.style.transitionDelay = `${index * 0.2}s`;
-  });                 
-    
+  });    //more parallax/appear on scroll eeffects!             
+
+  //typing effect
   const topTitle = document.querySelector('.top-title');
   if (topTitle) {
     const text = topTitle.textContent;
@@ -92,11 +95,11 @@ document.addEventListener('DOMContentLoaded', function(){
         setTimeout(typeWriter, 100);
       }
     };
-    
     setTimeout(typeWriter, 1000);
   }
 });
-   
+
+//scroll bar at the top of the web page. i watched a video on how to do this
 function addScrollProgressIndicator(){
   const progressBar = document.createElement('div');
   progressBar.className = 'scroll-progress';

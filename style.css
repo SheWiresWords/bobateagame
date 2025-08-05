@@ -11,7 +11,7 @@ body{
   font-family: 'Crimson Text', serif;
   line-height: 1.7;
   color: #333333;  
-  background: #ffeddb;
+  background: #ffeddb;   
 }                  
             
 /*Navigation */    
@@ -329,6 +329,7 @@ nav ul li a:hover::after {
   left: 0;
   right: 0;
   bottom: 0;
+  /*make tiny circles in background*/
   background-image: 
     radial-gradient(circle at 20% 30%, rgba(139, 69, 19, 0.05) 2px, transparent 2px),
     radial-gradient(circle at 80% 70%, rgba(212, 165, 116, 0.05) 1px, transparent 1px);
@@ -368,6 +369,10 @@ nav ul li a:hover::after {
   transform: translateY(0);
 }
 
+.timeline-item .timeline-content{
+padding:.75rem;
+}
+
 .timeline-item:nth-child(odd) {
   text-align: right;
   padding-right: 50%;
@@ -376,9 +381,9 @@ nav ul li a:hover::after {
 .timeline-item:nth-child(even) {
   text-align: left;
   padding-left: 50%;
-}                                        
-          
-.timeline-year{   
+}
+
+.timeline-year{
   display: inline-block;
   background: linear-gradient(135deg, #8B4513, #a0572a);
   color: white;
@@ -390,11 +395,11 @@ nav ul li a:hover::after {
   margin-bottom: 1rem;
   border: 2px solid #6d3410;
   letter-spacing: 1px;
-}                               
-             
+}
+
 .timeline-content h3{
   font-family: 'Playfair Display', serif;
-  font-size: 22rem;
+  font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
   color: #8B4513;
@@ -402,7 +407,7 @@ nav ul li a:hover::after {
 }
 
 .timeline-content p {
-  color: #444444;
+  color: #444;
   font-size: 1.1rem;
   line-height: 1.7;
   font-style: italic;

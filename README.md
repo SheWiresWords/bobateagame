@@ -22,3 +22,10 @@
 - How to make nav links to different parts of a page
 - I struggled with conceptually designing a timeline that made sense to a viewer
 - I struggled to learn the additional JavaScript animations, but I powered through with tutorial resources
+
+
+
+
+
+
+[![Athena Award Badge](https://img.shields.io/endpoint?url=https%3A%2F%2Faward.athena.hackclub.com%2Fapi%2Fbadge)](https://award.athena.hackclub.com?utm_source=readme)
